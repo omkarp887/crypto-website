@@ -1,18 +1,19 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Featured from "./components/Featured";
-import Signup from "./components/Signup";
-import Footer from "./components/Footer";
+
+import Contact from "./components/Contact";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Login from "./components/Login";
 
 function App() {
   return (
     <>
-     <Navbar/>
-     <Hero/>
-     <Featured/>
-     <Signup/>
-     <Footer />
+    <Routes>
+     <Route exact path="/contact" element={<Contact />}/>
+     <Route exact path="/login" element={<Login/>}/>
+     <Route exact path="/" element={<Home />}/>
+     </Routes>
+     
     </>
   )
 }

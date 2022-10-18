@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import {FaFacebook, FaGithub, FaTwitter, FaLinkedin} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -30,7 +31,8 @@ function Footer() {
             <div className='col'>
                 <h5>Company</h5>
                 <span className='bar'></span>
-                    <a href='/'>About</a>
+                <Link to="/contact">About Us</Link>
+                    {/* <a href='/'>About</a> */}
                     <a href='/'>Information</a>
                     <a href='/'>Legal</a>
                     <a href='/'>Privacy</a>

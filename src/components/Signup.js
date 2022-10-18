@@ -15,8 +15,7 @@ function Signup() {
                 <h2>Earn passive income with Crypto</h2>
                 <p>Earn upto 20% qnnual rewards and get free 1 BitCoin</p>
                 <div className='input-container'>
-                    <input type='email' placeholder='Enter your email'/>
-                    <button className='btn'>learn more</button>
+                    <button className='btn'><a href='https://en.wikipedia.org/wiki/Cryptocurrency' target="_blank">learn more</a></button>
                 </div>
             </div>
         </div>

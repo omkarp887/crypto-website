@@ -1,0 +1,27 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    margin: auto;
+    padding: 12px 32px;
+    
+}
+
+.form .btn {
+    padding: 14px 32px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 24px 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .btn {
+        width: 100%;
+        margin: 1rem 0;
+      }
+}

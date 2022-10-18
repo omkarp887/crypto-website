@@ -32,7 +32,7 @@ const Featured = () => {
         <div className="left">
           <h2>Explore top Crypto's like BitCoin, Etherum and DogeCoin</h2>
           <p>See all available assets: Cryptocurrency and NFT's</p>
-          <button className="btn">See more Coins</button>
+          <button className="btn"><a href="https://coinmarketcap.com/" target="_blank" >See more Coins</a></button>
         </div>
 
         {/* right */}
