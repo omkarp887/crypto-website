@@ -1,3 +1,3 @@
 CryptoCurrency Website
 
-link :
+link : https://coin-trade-by-omkar.netlify.app/
