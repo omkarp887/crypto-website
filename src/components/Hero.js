@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Hero.css'
 import Crypto from '../assets/hero-img.png'
 import { Link } from 'react-router-dom'
 
 function Hero() {
-    
+    const[disable, setDisable] = useState(true)
+    const handleChange=(e)=>{
+        setDisable(e.target.value === '')
+    }
   return (
     <div className='hero'>
         <div className='container'>
@@ -14,8 +17,8 @@ function Hero() {
                 <h1>Invest in Cryptocurrency</h1>
                 <p>Buy, Sell and store hundereds of Cryptocurrency</p>
                 <div className='input-container'>
-                    <input type='email' placeholder='Enter your email'/>
-                    <button className='btn'><Link to="/login">Login</Link></button>
+                    <input type='email' placeholder='Enter your email' onChange={handleChange} />
+                    <Link to="/login"><button className='btn' disabled={disable}>Login</button></Link>
                 </div>
             </div>
 
