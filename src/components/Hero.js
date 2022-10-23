@@ -17,7 +17,7 @@ function Hero() {
                 <h1>Invest in Cryptocurrency</h1>
                 <p>Buy, Sell and store hundereds of Cryptocurrency</p>
                 <div className='input-container'>
-                    <input type='email' placeholder='Enter your email' onChange={handleChange} />
+                    <input type='email' placeholder='Enter your email' onChange={handleChange}/>
                     <Link to="/login"><button className='btn' disabled={disable}>Login</button></Link>
                 </div>
             </div>
